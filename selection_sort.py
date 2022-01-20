@@ -8,6 +8,11 @@ def selection_sort(data):
     return data
 
 #########################
-
-arr = [5, 3, 6, 2, 10]
+size = input("This is the selection sort algorithm practice \nPlease enter the size of the array to be sorted : ")
+arr = list(range(int(size)))
+for i in arr:
+    arr[i] = int(input("element {}: ".format(i)))
+    
+    
+print("After Sorting :-")
 print(selection_sort(arr))
