@@ -23,7 +23,7 @@ class Graph:
             if start == value: 
                 return start
             else: 
-                queue.pop()
+                queue.pop(0)
                 print(start, end = " ")
             
             for i in self.adjecency_lists[start]:
@@ -33,7 +33,6 @@ class Graph:
         
 
 v1, v2, counter = 0, 0, 1
- 
 vertices_num = int(input("This is the BFS algorithm practice \nPlease enter the number of vertices in the graph : "))
 g = Graph(vertices_num)
  
@@ -51,4 +50,4 @@ while(True):
 
 value = int(input("\n\n Enter the value you want to search for : "))
 
-print("The value : {} exists in the graph".format(g.BFS(start, value)))
+print("\nThe value : {} exists in the graph".format(g.BFS(start, value)))
